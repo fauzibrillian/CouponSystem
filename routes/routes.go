@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"Day25/features/coupon"
-	"Day25/features/user"
+	"user_barang/features/coupon"
+	"user_barang/features/user"
 
 	echojwt "github.com/labstack/echo-jwt/v4"
 	"github.com/labstack/echo/v4"

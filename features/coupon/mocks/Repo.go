@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	coupon "Day25/features/coupon"
+	coupon "user_barang/features/coupon"
 
 	mock "github.com/stretchr/testify/mock"
 )

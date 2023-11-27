@@ -1,4 +1,4 @@
-module Day25
+module user_barang
 
 go 1.21.0
 

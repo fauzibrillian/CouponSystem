@@ -1,12 +1,12 @@
 package service_test
 
 import (
-	"Day25/features/coupon"
-	"Day25/features/coupon/mocks"
-	"Day25/features/coupon/service"
-	"Day25/helper/jwt"
 	"errors"
 	"testing"
+	"user_barang/features/coupon"
+	"user_barang/features/coupon/mocks"
+	"user_barang/features/coupon/service"
+	"user_barang/helper/jwt"
 
 	gojwt "github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/assert"

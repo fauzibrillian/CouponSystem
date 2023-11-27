@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	user "Day25/features/user"
+	user "user_barang/features/user"
 
 	mock "github.com/stretchr/testify/mock"
 )

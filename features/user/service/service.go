@@ -1,10 +1,10 @@
 package service
 
 import (
-	"Day25/features/user"
-	"Day25/helper/enkrip"
 	"errors"
 	"strings"
+	"user_barang/features/user"
+	"user_barang/helper/enkrip"
 )
 
 type userService struct {

@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"Day25/features/coupon/repository"
-	"Day25/features/user"
+	"user_barang/features/coupon/repository"
+	"user_barang/features/user"
 
 	"gorm.io/gorm"
 )

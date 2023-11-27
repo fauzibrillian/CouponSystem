@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"Day25/features/user"
-	"Day25/helper/jwt"
 	"net/http"
 	"strings"
+	"user_barang/features/user"
+	"user_barang/helper/jwt"
 
 	gojwt "github.com/golang-jwt/jwt/v5"
 	"github.com/labstack/echo/v4"

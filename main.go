@@ -1,16 +1,16 @@
 package main
 
 import (
-	"Day25/config"
-	ch "Day25/features/coupon/handler"
-	cr "Day25/features/coupon/repository"
-	cs "Day25/features/coupon/service"
-	uh "Day25/features/user/handler"
-	ur "Day25/features/user/repository"
-	us "Day25/features/user/service"
-	ek "Day25/helper/enkrip"
-	"Day25/routes"
-	"Day25/utils/database"
+	"user_barang/config"
+	ch "user_barang/features/coupon/handler"
+	cr "user_barang/features/coupon/repository"
+	cs "user_barang/features/coupon/service"
+	uh "user_barang/features/user/handler"
+	ur "user_barang/features/user/repository"
+	us "user_barang/features/user/service"
+	ek "user_barang/helper/enkrip"
+	"user_barang/routes"
+	"user_barang/utils/database"
 
 	"github.com/labstack/echo/v4"
 )

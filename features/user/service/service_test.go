@@ -1,12 +1,12 @@
 package service_test
 
 import (
-	"Day25/features/user"
-	"Day25/features/user/mocks"
-	"Day25/features/user/service"
-	eMock "Day25/helper/enkrip/mocks"
 	"errors"
 	"testing"
+	"user_barang/features/user"
+	"user_barang/features/user/mocks"
+	"user_barang/features/user/service"
+	eMock "user_barang/helper/enkrip/mocks"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,8 +1,8 @@
 package database
 
 import (
-	"Day25/config"
 	"fmt"
+	"user_barang/config"
 
 	"github.com/labstack/gommon/log"
 	"gorm.io/driver/mysql"
