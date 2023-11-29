@@ -1,0 +1,156 @@
+openapi: '3.0.2'
+info:
+  title: Coupon API
+  version: '1.0'
+  description: ini adalah API backend Coupon
+  contact:
+    email: brillianfauzi@gmail.com
+servers:
+  - url: http://localhost:8000
+tags:
+  - name: User
+  - name: Coupon
+paths:
+  /login:
+    post:
+      tags:
+        - User
+      summary: Login ke dalam sistem
+      description: This can only be done by the logged in user.
+      operationId: loginUser
+      requestBody:
+        description: Login user object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: Berhasil Login
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '405':
+          description: Gagal Inputan salah
+  /register:
+    post:
+      tags:
+        - User
+      summary: Create User ke dalam sistem
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      requestBody:
+        description: Create user object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: Berhasil membuat User
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '405':
+          description: Gagal Inputan salah
+  /coupon:
+    post:
+      tags:
+        - Coupon
+      summary: Mengupload Coupon ke dalam sistem
+      description: This can be done by the logged User
+      operationId: createCoupon
+      requestBody:
+        description: Create Coupon object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Coupon'
+      responses:
+        '200':
+          description: Berhasil membuat User
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Coupon'
+        '405':
+          description: Gagal Mendapatkan data
+  /coupon/all:
+    get:
+      tags:
+        - Coupon
+      summary: Mendapatkan data Coupon ke dalam sistem Tanpa Login
+      description: This can be done without Logged
+      operationId: getCoupon
+      requestBody:
+        description: Get Coupon object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Coupon'
+      responses:
+        '200':
+          description: Berhasil membuat User
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Coupon'
+        '405':
+          description: Gagal Mendapatkan data
+  /coupon/user:
+    get:
+      tags:
+        - Coupon
+      summary: Mendapatkan data Coupon ke dalam sistem
+      description: This can be done with Logged
+      operationId: getCouponUser
+      requestBody:
+        description: Get Coupon object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Coupon'
+      responses:
+        '200':
+          description: Berhasil membuat User
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Coupon'
+        '405':
+          description: Gagal Mendapatkan data
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        nama:
+          type: string
+          example: Joko
+        password:
+          type: string
+          example: joko1212
+    Coupon:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        nama_program:
+          type: string
+          example: Senam
+        link:
+          type: string
+          example: www.link.com
+        gambar:
+          type: string
+          example: testing.jpg
+        user_id:
+          type: integer
+          example: 1
