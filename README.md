@@ -25,9 +25,11 @@ This repository contains a Coupon Management System implemented with Gorm, Echo,
    git clone https://github.com/fauzibrillian/CouponSystem.git
 2. Change into the project directory:
 
+   ```bash
     cd CouponSystem
 3. Install dependencies:
 
+   ```bash
     go mod tidy
 
 ### API
