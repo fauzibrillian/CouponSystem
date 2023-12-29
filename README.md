@@ -34,7 +34,8 @@ This repository contains a Coupon Management System implemented with Gorm, Echo,
 
 ### Tech Stack
 
-![TectStack](https://github.com/fauzibrillian/CouponSystem/assets/73748420/c998ad7d-a0a2-48f9-a1ac-d3a9834bb0ba)
+
+![TechStack Rent Book](https://github.com/fauzibrillian/CouponSystem/assets/73748420/8d1a7bed-6e6f-4102-8d85-a28e6efbf646)
 
 
 ### API
