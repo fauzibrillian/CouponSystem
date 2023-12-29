@@ -8,7 +8,7 @@ This repository contains a Coupon Management System implemented with Gorm, Echo,
   - [Installation](#installation)
   - [API](#api)
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ This repository contains a Coupon Management System implemented with Gorm, Echo,
 - Echo
 - Database (e.g., Mysql) installed and accessible
 
-### Installation
+### 💻 Installation
 
 1. Clone the repository:
 
@@ -31,6 +31,11 @@ This repository contains a Coupon Management System implemented with Gorm, Echo,
 
    ```bash
     go mod tidy
+
+### Tech Stack
+
+![TectStack](https://github.com/fauzibrillian/CouponSystem/assets/73748420/c998ad7d-a0a2-48f9-a1ac-d3a9834bb0ba)
+
 
 ### API
 
